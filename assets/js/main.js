@@ -77,7 +77,7 @@ $(function() {
         infinite: true,
         speed: 800,
         slidesToShow: 5,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         arrows: false,
         responsive: [
             {
@@ -141,7 +141,14 @@ $(function() {
     });
     
     
-    
+    $(window).on('scroll', function(event) {
+      if($(this).scrollTop() > 400){
+          $('.fixme').fadeIn(200)
+      } else{
+          $('.fixme').fadeOut(200)
+      }
+  });
+
     
     
     

@@ -1338,7 +1338,7 @@ p.form-message.error {
 
 .back-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 64px;
   right: 20px;
   font-size: 18px;
   width: 40px;
