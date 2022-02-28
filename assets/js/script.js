@@ -58,3 +58,11 @@ $(window).on('scroll', function (event) {
         }, 200);
     }
 });
+
+$(window).on('scroll', function(event) {
+    if($(this).scrollTop() > 300){
+        $('.fixme').fadeIn(200)
+    } else{
+        $('.fixme').fadeOut(200)
+    }
+});
