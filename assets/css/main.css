@@ -1,0 +1,27 @@
+.bg-black{
+    background-color: #031222 !important;
+}
+.bg-indigo, .hover-bg-indigo:hover {
+    background-color: #0f97e4 !important;
+}
+
+.main-logo{
+    height: 45px!important;
+    max-height: 45px!important;
+}
+.fs-l3 {
+    font-size: 40px !important;
+}
+
+.list-check li{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.bc-indigo, .hover-bc-indigo:hover, .focus-bc-indigo:focus {
+    border-color: #0f97e4 !important;
+}
+
+button{
+    font-size: 16px !important;
+}

@@ -2,564 +2,265 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading on the levels</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!--====== Required meta tags ======-->
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!--====== Title ======-->
-    <title>Master of Trading Signals</title>
-
-    <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="./logo.png" type="image/png">
-
-    <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
-    <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-
-    <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
-
-    <!--====== Animate css ======-->
-    <link rel="stylesheet" href="assets/css/animate.css">
-
-    <!--====== Aos css ======-->
-    <link rel="stylesheet" href="assets/css/aos.css">
-
-    <!--====== Slick css ======-->
-    <link rel="stylesheet" href="assets/css/slick.css">
-
-    <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
-
-    <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-
+        <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
 </head>
 
-<body>
+<body class="bg-black muli">
+    <nav class="w-100pc flex flex-column md-flex-row md-px-10 py-2 bg-black">
+        <div class="flex justify-between">
+            <a href="https://t.me/trading_on_the_levels" class="flex items-center p-2 mr-4 no-underline">
+                <img class="max-h-l2 w-auto main-logo" src="assets/images/logo-transparent.png" />
+            </a>
+            <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
+                class="flex items-center ml-auto md-hidden indigo-lighter opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+                <i data-feather="menu"></i>
+            </a>
+        </div>
+        <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
+            <a href="#home" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Home</a>
+            <a href="#features" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Features</a>
+            <a href="#slider-1" class="fs-s1 mx-3 py-3 indigo no-underline hover-underline">Cutomer Reviews</a>
+        </div>
+    </nav>
 
-    <!--====== PRELOADER PART START ======-->
+    <!-- hero section -->
+    <section id="home" class="min-h-100vh flex justify-start items-center">
+        <div class="mx-5 md-mx-l5 mb-10">
 
-    <div class="preloader">
-        <div class="loader_34">
-            <div class="ytp-spinner">
-                <div class="ytp-spinner-container">
-                    <div class="ytp-spinner-rotator">
-                        <div class="ytp-spinner-left">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                        <div class="ytp-spinner-right">
-                            <div class="ytp-spinner-circle"></div>
-                        </div>
-                    </div>
-                </div>
+            <div>
+                <h1 class="white fs-l3 lh-2 md-fs-xl1 md-lh-1 fw-900 my-5">Book huge profits<br> like never before!!
+                </h1>
+                <img style="width: 70vw;display: block;margin-left: auto;margin-right: auto;"
+                    src="./assets/images/mockup.png" />
+                <ul class="white list-check mt-6" style="list-style: none;">
+
+                    <li class=" mb-2">✓ Quick Gains, Big Targets</li>
+                    <li class=" mb-2">✓ Analysis Breakdown of Each Call</li>
+                    <li class=" mb-2">✓ Constant Live Guidance on Running Trade</li>
+                    <li class=" mb-2">✓ Small Stop Losses, Take Big Profits</li>
+                </ul>
+                <a href="https://t.me/trading_on_the_levels" class="button mt-6"
+                    style="background-color: #d9d9d9; color:#031222;font-weight: 700;margin-left: 2rem;text-decoration: none;"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-telegram mr-2" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                    </svg>Join telegram Channel Now!!</a>
             </div>
         </div>
-    </div>
-
-    <!--====== PRELOADER ENDS START ======-->
-
-    <!--====== HEADER PART START ======-->
-
-    <header id="home" class="header-area pt-100">
-
-        <div class="shape header-shape-one">
-            <img src="assets/images/banner/shape/shape-1.png" alt="shape">
-        </div> <!-- header shape one -->
-
-        <div class="shape header-shape-tow animation-one">
-            <img src="assets/images/banner/shape/shape-2.png" alt="shape">
-        </div> <!-- header shape tow -->
-
-        <div class="shape header-shape-three animation-one">
-            <img src="assets/images/banner/shape/shape-3.png" alt="shape">
-        </div> <!-- header shape three -->
-
-        <div class="shape header-shape-fore">
-            <img src="assets/images/banner/shape/shape-4.png" alt="shape">
-        </div> <!-- header shape three -->
-
-        <div class="navigation-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="https://t.me/trading_on_the_levels">
-                                <img src="./logo- text-landscape.png" alt="">
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                                <span class="toggler-icon"></span>
-                            </button>
-
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                <ul id="nav" class="navbar-nav ml-auto">
-                                    <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#about">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#service">Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#project">Customer Reviews</a>
-                                    </li>
-                                </ul> <!-- navbar nav -->
-                            </div>
-                            <!-- <div class="navbar-btn ml-20 d-none d-sm-block">
-                                <a class="main-btn" href="#"><i class="lni lni-telegram-original"></i> +98 222 4444</a>
-                            </div> -->
-                        </nav> <!-- navbar -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- navigation bar -->
-
-        <div class="header-banner d-flex align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-8 col-lg-9 col-sm-10">
-                        <div class="banner-content">
-                            <h4 class="sub-title wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">Join with</h4>
-                            <h1 class="banner-title mt-10 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2s"><span>3000+ traders</span> who are actively using my signals and gaining profits.</h1>
-                            <a class="main-btn banner-contact mt-25 mx-1 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2.3s" href="https://t.me/trading_on_the_levels">Join Telegram Channel Now!</a>
-                        </div> <!-- banner content -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-            <div class="banner-image bg_cover" style="background-image: url(assets/images/banner/banner.jpg)"></div>
-        </div> <!-- header banner -->
-
-    </header>
-
-    <!--====== HEADER PART ENDS ======-->
-
-    <!--====== ABOUT PART START ======-->
-
-    <section id="about" class="about-area pt-80 pb-130">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about-image mt-50 clearfix">
-                        <div class="single-image float-left">
-                            <img src="assets/images/about/about.jpg" alt="About">
-                        </div> <!-- single image -->
-                        <div data-aos="fade-right" class="about-btn">
-                            <a class="main-btn" href="https://t.me/trading_on_the_levels"><span>7</span> Years Experience</a>
-                        </div>
-                        <!-- <div class="single-image image-tow float-right">
-                            <img src="assets/images/about/about-2.jpg" alt="About">
-                        </div> -->
-                    </div> <!-- about image -->
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-content mt-45">
-                        <h4 class="about-welcome">About Me </h4>
-                        <h3 class="about-title mt-10">Reasons to choose</h3>
-                        <p class="mt-25">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
-                            <br> <br>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <a class="main-btn mt-25" href="https://t.me/trading_on_the_levels">Join Telegram Channel</a>
-                    </div> <!-- about content -->
-                </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
     </section>
 
-    <!--====== ABOUT PART ENDS ======-->
-
-    <!--====== SERVICES PART START ======-->
-
-    <section id="service" class="services-area pt-125 pb-130 gray-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-title text-center pb-20">
-                        <h5 class="sub-title mb-15">Our Services</h5>
-                        <h2 class="title">What We Provide?</h2>
-                    </div> <!-- section title -->
+    <!-- features -->
+    <section id="features" class="p-10 md-p-l5" style="background-color: #1b2839;">
+        <div class="flex flex-column md-flex-row mx-auto">
+            <div class="w-100pc md-w-40pc bg-black p-5" style="border-radius: 4px;">
+                <div class="br-8">
+                    <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><img width="40px" src="./assets/images/idea.png" style="transform: translate(-4px,0px);"/></div>
+                    <h4 class="white fw-600 fs-m3 mb-5">Powerful Calls</h4>
+                    <div class="indigo-lightest fw-600 lh-3 opacity-50">After the data backed study I generate powerful trading signals which are highly accurate. I provide accurate entry and multi level targets per signal.</div>
+                    <a href="https://t.me/trading_on_the_levels"
+                        class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Know More</a>
                 </div>
-            </div> <!-- row -->
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                        <div class="services-icon">
-                            <i class="lni lni-stats-up"></i>
-                        </div>
-                        <div class="services-content mt-15">
-                            <h4 class="services-title">Banknifty Options Signals</h4>
-                            <p class="mt-20">3-5 Signals Per Day Depending On Market Conditions</p>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
-                        <div class="services-icon">
-                            <i class="lni lni-target-revenue"></i>
-                        </div>
-                        <div class="services-content mt-15">
-                            <h4 class="services-title">Equity Option Signals</h4>
-                            <p class="mt-20">Small SLs, Lowest Drawdown, Big Risk to Reward Ratio</p>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                        <div class="services-icon">
-                            <i style="transform: scaleX(-1);" class="lni lni-rocket"></i>
-                        </div>
-                        <div class="services-content mt-15">
-                            <h4 class="services-title">Multibagger Penny Stocks</h4>
-                            <p class="mt-20">I use number of trading strategies and each strategy is specially tailored to different market conditions.</p>
-                        </div>
-                    </div> <!-- single services -->
-                </div>
-                <!-- <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
-                        <div class="services-icon">
-                            <i class="lni-briefcase"></i>
-                        </div>
-                        <div class="services-content mt-15">
-                            <h4 class="services-title">Commercial Design</h4>
-                            <p class="mt-20">Mauris aliquam, turpis sed mattis placerat, justo risus pellentesque quam, id finibus risus arcu eget neque.</p>
-                        </div>
-                    </div> 
-                </div> -->
-                <!-- <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
-                        <div class="services-icon">
-                            <i class="lni-handshake"></i>
-                        </div>
-                        <div class="services-content mt-15">
-                            <h4 class="services-title">Hospitality Design</h4>
-                            <p class="mt-20">Mauris aliquam, turpis sed mattis placerat, justo risus pellentesque quam, id finibus risus arcu eget neque.</p>
-                        </div>
-                    </div> 
-                </div> -->
-                <!-- <div class="col-lg-4 col-md-6 col-sm-8">
-                    <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                        <div class="services-icon">
-                            <i class="lni-grow"></i>
-                        </div>
-                        <div class="services-content mt-15">
-                            <h4 class="services-title">Co-working Space Design</h4>
-                            <p class="mt-20">Mauris aliquam, turpis sed mattis placerat, justo risus pellentesque quam, id finibus risus arcu eget neque.</p>
-                        </div>
-                    </div> 
-                </div> -->
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </section>
-
-    <!--====== SERVICES PART ENDS ======-->
-
-    <!--====== PROJECT PART START ======-->
-
-    <section id="project" class="project-area pt-125 pb-130">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section-title text-center pb-50">
-                        <h5 class="sub-title mb-15">Customers Reviews</h5>
-                        <h2 class="title">What my customers say about the services</h2>
-                    </div> <!-- section title -->
-                </div>
-            </div> <!-- row -->
-        </div>
-        <div class="container-fluid">
-            <div class="row project-active">
-                <div class="col-lg-4">
-                    <div class="single-project">
-                        <div class="project-image">
-                            <img src="assets/images/reviews (1).jpg" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <a class="project-title" href="https://t.me/trading_on_the_levels">Join Telegram Channel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-project">
-                        <div class="project-image">
-                            <img src="assets/images/reviews (2).jpg" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <a class="project-title" href="https://t.me/trading_on_the_levels">Join Telegram Channel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-project">
-                        <div class="project-image">
-                            <img src="assets/images/reviews (3).jpg" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <a class="project-title" href="https://t.me/trading_on_the_levels">Join Telegram Channel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-project">
-                        <div class="project-image">
-                            <img src="assets/images/reviews (4).jpg" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <a class="project-title" href="https://t.me/trading_on_the_levels">Join Telegram Channel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-project">
-                        <div class="project-image">
-                            <img src="assets/images/reviews (5).jpg" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <a class="project-title" href="https://t.me/trading_on_the_levels">Join Telegram Channel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-project">
-                        <div class="project-image">
-                            <img src="assets/images/reviews (6).jpg" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <a class="project-title" href="https://t.me/trading_on_the_levels">Join Telegram Channel</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-project">
-                        <div class="project-image">
-                            <img src="assets/images/reviews (7).jpg" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <a class="project-title" href="https://t.me/trading_on_the_levels">Join Telegram Channel</a>
-                        </div>
-                    </div>
+            </div>
+            <div class="w-100pc md-w-40pc bg-black p-5 mt-5" style="border-radius: 4px;">
+                <div class="br-8">
+                    <div class="flex justify-center items-center bg-indigo-lightest-10 white w-l5 h-l5 br-round mb-5"><img width="40px" src="./assets/images/incomes.png"/></div>
+                    <h4 class="white fw-600 fs-m3 mb-5">Build Wealth</h4>
+                    <div class="indigo-lightest fw-600 opacity-50">After all the heavy lifting is done by me all you have to do is trade with our signals and generate huge profits. This has helped more than 1Lakh traders build their wealth.</div>
+                    <a href="https://t.me/trading_on_the_levels"
+                        class="mt-5 button bg-indigo-lightest-10 fs-s3 white no-underline hover-opacity-100 hover-scale-up-1 ease-300">Know more</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--====== PROJECT PART ENDS ======-->
+        <!-- big text -->
+        <section class="big-text p-10 md-py-10">
+            <div class="w-100pc md-w-70pc mx-auto py-10">
+                <h2 class="text white fs-l2 md-fs-xl1 fw-900 lh-2">
+                    Join   
+                    <span class="border-b bc-indigo bw-4 traders"> 3000+</span> traders who are actively using my signals and gaining profits.</h2>
+            
+                    <a href="https://t.me/trading_on_the_levels"  class="button mt-6"
+                    style="background-color: #d9d9d9; color:#031222;font-weight: 700;text-decoration:none"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        class="bi bi-telegram mr-2" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                    </svg>Join telegram Channel Now!!</a>
+                </div>
+        </section>
 
+    <!-- slider -->
+    <section class="relative bg-indigo-lightest-10">
+        <div id="slider-1">
+            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                <img src="./assets/images/reviews (1).jpg">
+            </div>
+            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                <img src="./assets/images/reviews (2).jpg">
+            </div>
+            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                <img src="./assets/images/reviews (3).jpg">
+            </div>
+            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                <img src="./assets/images/reviews (4).jpg">
+            </div>
+            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                <img src="./assets/images/reviews (5).jpg">
+            </div>
+            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                <img src="./assets/images/reviews (6).jpg">
+            </div>
+            <div class="p-10 md-p-l10 flex justify-center items-center flex-column text-center">
+                <img src="./assets/images/reviews (7).jpg">
+            </div>
+        </div>
+        <a href="https://t.me/trading_on_the_levels" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline ml-10 mb-10">Join Now!</a>
 
-    <!--====== TESTIMONIAL PART START ======-->
-
-    <section id="testimonial" class="testimonial-area pt-130 pb-130 gray-bg">
-        <div class="shape shape-one">
-            <img src="assets/images/testimonial/shape.png" alt="testimonial">
-        </div>
-        <div class="shape shape-tow">
-            <img src="assets/images/testimonial/shape.png" alt="testimonial">
-        </div>
-        <div class="shape shape-three">
-            <img src="assets/images/testimonial/shape.png" alt="testimonial">
-        </div>
-        <div class="container">
-            <div class="testimonial-bg bg_cover pt-80 pb-80" >
-                <div class="row">
-                    <div class="col-xl-4 offset-xl-7 col-lg-5 offset-lg-6 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
-                        <div class="testimonial-active">
-                            <div class="single-testimonial text-center">
-                                <div class="testimonial-image">
-                                    <img src="assets/images/testimonial/t-1.jpg" alt="Testimonial">
-                                    <div class="quota">
-                                        <i class="lni-quotation"></i>
-                                    </div>
-                                </div>
-                                <div class="testimonial-content mt-20">
-                                    <p>I Have Been Trading With Lots Of Brokerage Firms Before, But The Experience With Sure Means Sure Is Much Better...</p>
-                                    <h5 class="testimonial-name mt-15">Fajar</h5>
-                                    <span class="sub-title">2.1+ Lakh profits booked</span>
-                                </div>
-                            </div> <!-- single-testimonial -->
-                            <div class="single-testimonial text-center">
-                                <div class="testimonial-image">
-                                    <img src="assets/images/testimonial/t-2.jpg" alt="Testimonial">
-                                    <div class="quota">
-                                        <i class="lni-quotation"></i>
-                                    </div>
-                                </div>
-                                <div class="testimonial-content mt-20">
-                                    <p>Booked profit on the first trade i followed from the group. Thank you Tradin on the levels. Best thing is that it is free.</p>
-                                    <h5 class="testimonial-name mt-15">Riya Sharma</h5>
-                                    <span class="sub-title">3+ Lakh profits booked</span>
-                                </div>
-                            </div> <!-- single-testimonial -->
-                            <div class="single-testimonial text-center">
-                                <div class="testimonial-image">
-                                    <img src="assets/images/testimonial/t-3.jpg" alt="Testimonial">
-                                    <div class="quota">
-                                        <i class="lni-quotation"></i>
-                                    </div>
-                                </div>
-                                <div class="testimonial-content mt-20">
-                                    <p>I have tried many services but not that good. I came accross Trading on the levels, I started following it. I had many Great Trades after that.</p>
-                                    <h5 class="testimonial-name mt-15">Celina</h5>
-                                    <span class="sub-title">1.5 Lakh profits booked</span>
-                                </div>
-                            </div> <!-- single-testimonial -->
-                        </div> <!--  testimonial active -->
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- testimonial bg -->
-        </div> <!-- container -->
+        <ul class="absolute list-none w-100pc flex justify-between top-50pc">
+            <li><button
+                    class="prev ml-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2 focus-indigo-lighter outline-none"><i
+                        data-feather="chevron-left"></i></button></li>
+            <li><button
+                    class="next mr-10 br-round border-indigo-lightest indigo-lightest  bg-transparent flex justify-center items-center p-2  focus-indigo-lighter outline-none"><i
+                        data-feather="chevron-right"></i></button></li>
+        </ul>
     </section>
 
-    <!--====== TESTIMONIAL PART ENDS ======-->
-
-    <!--====== FOOTER PART START ======-->
-
-    <footer id="footer" class="footer-area">
-        <div class="footer-widget pt-80 pb-130">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-8">
-                        <div class="footer-logo mt-50">
-                            <a href="#">
-                                <img src="./logo- text-landscape.png" alt="">
-                            </a>
-                            <!-- <ul class="footer-info">
-                                <li>
-                                    <div class="single-info">
-                                        <div class="info-icon">
-                                            <i class="lni-phone-handset"></i>
-                                        </div>
-                                        <div class="info-content">
-                                            <p>+1880 123 456 789</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="single-info">
-                                        <div class="info-icon">
-                                            <i class="lni-envelope"></i>
-                                        </div>
-                                        <div class="info-content">
-                                            <p>contact@yourmail.com</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="single-info">
-                                        <div class="info-icon">
-                                            <i class="lni-map"></i>
-                                        </div>
-                                        <div class="info-content">
-                                            <p>1234 Avenue New York, US</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul> -->
-                            <!-- <ul class="footer-social mt-20">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-instagram"></i></a></li>
-                            </ul> -->
-                        </div> <!-- footer logo -->
-                    </div>
-
-                    <div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="footer-link mt-45">
-                            <div class="f-title">
-                                <h4 class="title">Services</h4>
-                            </div>
-                            <ul class="mt-15">
-                                <li><a href="https://t.me/trading_on_the_levels">Banknifty Options Signals</a></li>
-                                <li><a href="https://t.me/trading_on_the_levels">Equity Option Signals</a></li>
-                                <li><a href="https://t.me/trading_on_the_levels">Multibagger Penny Stocks</a></li>
-                            </ul>
+    <!-- testimonials -->
+    <section class="p-10 md-p-l5">
+        <div id="slider-2">
+            <div class="px-3">
+                <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                    <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                    <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">I Have Been Trading With Lots Of Brokerage Firms Before, But the experience With Trading on the levels Is Much Better...</p>
+                    <div class="flex items-center my-5">
+                        <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                src="https://randomuser.me/api/portraits/women/46.jpg" alt=""></div>
+                        <div class="ml-4 fs-s1">
+                            <div class="indigo-lightest">Reema Farzin</div>
+                            <div class="indigo-lightest opacity-20">5+ Lakh profit booked</div>
                         </div>
                     </div>
-
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- footer widget -->
-        <div class="copyright-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="copyright text-center">
-                            <p>Copyright 2022 Trading on the levels. All rights reserved.</p>
-                        </div> <!-- copyright -->
+                </div>
+            </div>
+            <div class="px-3">
+                <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                    <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                    <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Made Good Profit in the Intraday, F&o Tips. Overall Service is very good. Your Intraday Stock tips are very profitable.</p>
+                    <div class="flex items-center my-5">
+                        <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                src="https://randomuser.me/api/portraits/men/6.jpg" alt=""></div>
+                        <div class="ml-4 fs-s1">
+                            <div class="indigo-lightest">Virag Sharma</div>
+                            <div class="indigo-lightest opacity-20">3+ Lakh profits booked</div>
+                        </div>
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div> <!-- copyright-area -->
+                </div>
+            </div>
+            <div class="px-3">
+                <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                    <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                    <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">I have been part of VIP group from last 6 months and my capital is doubled!! Withdrawn the capital, Now I am trading only with the profits.</p>
+                    <div class="flex items-center my-5">
+                        <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                src="https://randomuser.me/api/portraits/men/9.jpg" alt=""></div>
+                        <div class="ml-4 fs-s1">
+                            <div class="indigo-lightest">Rahul Jain</div>
+                            <div class="indigo-lightest opacity-20">2.7 Lakh profit booked</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-3">
+                <div class="p-8 br-8 bg-indigo-lightest-10 relative">
+                    <span class="fs-l5 lh-1 white opacity-10 absolute top-0 z--1">&#10077;</span>
+                    <p class="fw-600 fs-m1 indigo-lightest opacity-80 italic ls-wider">Booked profit on the first trade i followed from the group. Thank you Trading on the levels. Best thing is that it is free.</p>
+                    <div class="flex items-center my-5">
+                        <div class="block br-round border bc-black bw-4 w-l3 h-l3"><img class="br-round"
+                                src="https://randomuser.me/api/portraits/women/42.jpg" alt=""></div>
+                        <div class="ml-4 fs-s1">
+                            <div class="indigo-lightest">Riya Gupta</div>
+                            <div class="indigo-lightest opacity-20">1+ Lakh profits booked</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- featured blog
+    <section class="p-10 md-p-l10">
+        <div class="md-w-75pc">
+            <h2 class="white fs-l3 fw-900 lh-1">Lorem ipsum dolor sit amet, consectetur</h2>
+            <p class="indigo-lightest fw-600 fs-m1 opacity-50 my-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor </p>
+        </div>
+        <div class="relative w-100pc h-75vh bg-cover bg-b"
+            style="background-image: url(assets/images/nicholas-kwok-VBWWscZtszY-unsplash.jpg);">
+            <a href="#"
+                class="bg-white black px-5 py-3 absolute right-0 bottom-0 hover-bg-black hover-white ease-500 flex justify-center items-center after-arrow-right no-underline fs-m1"></a>
+        </div>
+
+    </section> -->
+
+    <!-- subscribe -->
+    <section class="p-10 md-p-l5">
+        <div class="br-8 bg-indigo-lightest-10 p-5 md-p-l5 flex flex-wrap md-justify-between md-items-center">
+            <div class="w-100pc md-w-33pc">
+                <h2 class="white fs-m4 fw-800">Join telegram channel now</h2>
+                <p class="fw-600 indigo-lightest opacity-40">Join This Channel To Start Your Journey To Become Part of 5% Traders Who Always Make Money in Stock Markets. Profits guaranteed!</p>
+            </div>
+            <div class="w-100pc md-w-50pc">
+                <div class="">
+        <a href="https://t.me/trading_on_the_levels" class="button-md bg-indigo white fs-s3 br-4 black fw-600 no-underline">Join Now!</a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 md-p-l5 bg-indigo-lightest-10">
+        <div class="flex flex-wrap">
+            <div class="md-w-25pc mb-10">
+                <a href="https://t.me/trading_on_the_levels" class="flex items-center p-2 mr-4 no-underline">
+                    <img class="max-h-l2 w-auto main-logo" src="assets/images/logo-transparent.png" />
+                </a>
+                <div class="white opacity-70 fs-s2 mt-4 md-pr-10">
+                    <p>Join one of the most profitable trading community. Join telegram channel and get powerful and super profitable trading signals now and enjoy huge profits.</p>
+                </div>
+            </div>
+
+        </div>
+        <p style="position: absolute;font-size: 10px;">2022 © Trading on the levels. All Rights Reserved.</p>
+
     </footer>
-
-    <!--====== FOOTER PART ENDS ======-->
-
-    <!--====== BACK TO TOP PART START ======-->
-
-    <div class="d-lg-none fixme" style="position: fixed; bottom: 0px; width: 100%; z-index: 10000; display: block;">            
-      
-        <a class="main-btn px-4 w-100" style="padding: 4px !important;font-size: 14px;line-height: 36px;" href="https://t.me/trading_on_the_levels"> <i class="fab fa-telegram-plane mr-3"></i>Join telegram channel now</a>
-      </div>
-
-    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
-
-    <!--====== BACK TO TOP PART ENDS ======-->
-
-    <!--====== PART START ======-->
-
-    <!--
-    <section class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-"></div>
-            </div>
-        </div>
-    </section>
--->
-
-    <!--====== PART ENDS ======-->
-
-
-    <!-- row -->
-
-
-
-
-
-
-
-
-
-    <!--====== jquery js ======-->
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-
-    <!--====== Bootstrap js ======-->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!--====== WOW js ======-->
-    <script src="assets/js/wow.min.js"></script>
-
-    <!--====== Slick js ======-->
-    <script src="assets/js/slick.min.js"></script>
-
-    <!--====== Scrolling Nav js ======-->
-    <script src="assets/js/scrolling-nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
-
-    <!--====== Aos js ======-->
-    <script src="assets/js/aos.js"></script>
-
-
-    <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
-
+    <!-- <a class="fixed top-50pc right-0 p-3 bg-indigo white hover-scale-up-1 ease-300 no-underline" href="https://gum.co/tifJM" target="_blank" >
+        <i class="w-4" data-feather="download"></i>
+    </div> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
